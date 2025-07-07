@@ -4,7 +4,7 @@ metadata:
   name: label-demo
   labels:
     Course: devops
-    duration: 100
+    duration: hundred
 spec:
   containers:
   - name: hello-pod
