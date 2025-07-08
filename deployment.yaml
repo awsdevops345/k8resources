@@ -1,0 +1,23 @@
+apiVedeploymention: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+    demo: deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+      demo: deployment  
+  template:  
+    metadata:
+      labels:
+        app: nginx
+        demo: deployment 
+    spec: 
+      containedeployment:
+      - name: hello-pod-deployment
+        image: nginx:nginx/unit:1.29.1-minimal
+          
