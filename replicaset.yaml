@@ -16,8 +16,8 @@ metadata:
           labels:
             app: nginx
             demo: rs 
-      spec: 
-        containers:
-        - name: hello-pod-rs
-          image: nginx
+        spec: 
+          containers:
+          - name: hello-pod-rs
+            image: nginx
           
