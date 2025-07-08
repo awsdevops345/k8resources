@@ -20,7 +20,7 @@ spec:
           name: devopsconfig
           key: Trainer
 
---------
+---
 apiVersion: v1
 kind: Pod
 metadata:
