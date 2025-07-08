@@ -5,19 +5,19 @@ metadata:
   labels:
     app: nginx
     demo: rs
-  spec:
-    replicas: 3
-    selector:
-      matchlabels:
+spec:
+  replicas: 3
+  selector:
+    matchlabels:
+      app: nginx
+      demo: rs  
+  template:  
+    metadata:
+      labels:
         app: nginx
-        demo: rs  
-      template:  
-        metadata:
-          labels:
-            app: nginx
-            demo: rs 
-        spec: 
-          containers:
-          - name: hello-pod-rs
-            image: nginx
+        demo: rs 
+    spec: 
+      containers:
+      - name: hello-pod-rs
+        image: nginx
           
