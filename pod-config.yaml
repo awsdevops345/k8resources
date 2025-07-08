@@ -19,3 +19,10 @@ spec:
         configMapKeyRef:
           name: devopsconfig
           key: Trainer
+  - name: helo-pod-1
+    image: nginx
+    ports:
+    - containerPort: 80
+    envFrom:
+    - configMapRef:
+        name: devopsconfig
