@@ -17,7 +17,7 @@ spec:
         app: nginx
         demo: deployment 
     spec: 
-      containedeployment:
+      containers:
       - name: hello-pod-deployment
         image: nginx:nginx/unit:1.29.1-minimal
           
